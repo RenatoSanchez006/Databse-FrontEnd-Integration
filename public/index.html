@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>This is index</title>
+	<link href="./index.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<h1>List of posts</h1>
+	<form>
+		<fieldset>
+			<Legend>
+				Search by author
+			</Legend>
+			<label for="searchAuthor">
+				<div> Author: </div>
+				<input id="searchAuthor" class="formClass" type="text">
+			</label>
+			<button class="button" id="search" type="button">Search</button>
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<Legend>
+				Add new Post
+			</Legend>
+			<div>
+				<label for="postTitle">
+					<div>
+						Title*:
+					</div>
+					<input id="postTitle" class="formClass" type="text">
+				</label>
+			</div>
+			<div>
+				<label for="postAuthor">
+					<div>
+						Author*:
+					</div>
+					<input id="postAuthor" class="formClass" type="text">
+				</label>
+			</div>
+			<div>
+				<label for="postContent">
+					<div>
+						Content*:
+					</div>
+					<textarea id="postContent" class="formClass" type="text"></textarea>
+				</label>
+			</div>
+			<div>
+				<label for="postPublishDate">
+					<div>
+						Publish Date*:
+					</div>
+					<input id="postPublishDate" class="formClass" type="text">
+				</label>
+			</div>
+			<button class="button" id="postButton" type="button">Post</button>
+			<p>Required *</p>
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<Legend>
+				Edit Post
+			</Legend>
+			<div>
+				<label for="editId">
+					<div>
+						ID*:
+					</div>
+					<input id="editId" class="formClass" type="text">
+				</label>
+			</div>
+			<div>
+				<label for="editTitle">
+					<div>
+						Title*:
+					</div>
+					<input id="editTitle" class="formClass" type="text">
+				</label>
+			</div>
+			<div>
+				<label for="editAuthor">
+					<div>
+						Author:
+					</div>
+					<input id="editAuthor" class="formClass" type="text">
+				</label>
+			</div>
+			<div>
+				<label for="editContent">
+					<div>
+						Content*:
+					</div>
+					<textarea id="editContent" class="formClass" type="text"></textarea>
+				</label>
+			</div>
+			<div>
+				<label for="editPublishDate">
+					<div>
+						PublishDate*:
+					</div>
+					<input id="editPublishDate" class="formClass" type="text">
+				</label>
+			</div>
+			<button class="button" id="editButton" type="button">Edit</button>
+			<p>Required *</p>
+		</fieldset>
+	</form>
+
+	<div class="post-list">
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
